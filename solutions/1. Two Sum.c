@@ -1,67 +1,47 @@
-struct table{
-    int size;
-    struct node **list;
-};
-struct table *createTable(int size){
-    struct table *t = (struct table*)malloc(sizeof(struct table));
-    t->size = size;
-    t->list = (struct node**)malloc(sizeof(struct node*)*size);
-    int i;
-    for(i=0;i<size;i++)
-        t->list[i] = NULL;
-    return t;
+/**
+C solution in O(n) time, using open addressing hash table.
+*/
+#define SIZE 50000
+​
+int hash(int key) {
+    int r = key % SIZE;
+    return r < 0 ? r + SIZE : r;
 }
-int hashCode(struct table *t, int key){
-    if(key<0)
-        return -(key%t->size);
-    return key%t->size;
-}
-void insert(struct table *t,int key,int value){
-    int pos = hashCode(t,key);
-    struct node *list = t->list[pos];
-    struct node *newNode = (struct node*)malloc(sizeof(struct node));
-    struct node *temp = list;
-    while(temp){
-        if(temp->key==key){
-            temp->value = value;
-            return;
-        }
-        temp = temp->next;
+​
+void insert(int *keys, int *values, int key, int value) {
+    int index = hash(key);
+    while (values[index]) {
+        index = (index + 1) % SIZE;
     }
-    newNode->key = key;
-    newNode->value = value;
-    newNode->next = list;
-    t->list[pos] = newNode;
+    keys[index] = key;
+    values[index] = value;
 }
-int lookup(struct table *t,int key){
-    int pos = hashCode(t,key);
-    struct node *list = t->list[pos];
-    struct node *temp = list;
-    while(temp){
-        if(temp->key==key){
-            return temp->value;
+​
+int search(int *keys, int *values, int key) {
+    int index = hash(key);
+    while (values[index]) {
+        if (keys[index] == key) {
+            return values[index];
         }
-        temp = temp->next;
+        index = (index + 1) % SIZE;
     }
-    return -1;
+    return 0;
 }
 ​
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){
-    struct table *t = createTable(numsSize);
-    int i;
     *returnSize = 2;
-    int *result = (int*)malloc(sizeof(int)* *returnSize);
-    for(i = 0; i < numsSize; i++){
-        insert(t, nums[i], i);
-    }
-    for(i = 0; i < numsSize; i++){
-        int complement = target - nums[i];
-        if(lookup(t, complement)!= -1 && lookup(t, complement)!= i){
-            result[0] = lookup(t, complement);
-            result[1] = i;
+    int keys[SIZE];
+    int values[SIZE] = {0};
+    for (int i = 0; i < numsSize; i++) {
+        int complements = target - nums[i];
+        int value = search(keys, values, complements);
+        if (value) {
+            int *indices = (int *) malloc(sizeof(int) * 2);
+            indices[0] = value - 1;
+            indices[1] = i;
+            return indices;
         }
+        insert(keys, values, nums[i], i + 1);
     }
-    free(t);
-​
-    return result;
+    return NULL;
 }
