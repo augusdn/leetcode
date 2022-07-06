@@ -27,6 +27,7 @@
 |347|[ Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Python3](./solutions/347.%20Top%20K%20Frequent%20Elements.py)|188 ms|
 |424|[ Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[Python3](./solutions/424.%20Longest%20Repeating%20Character%20Replacement.py)|172 ms|
 |567|[ Permutation in String](https://leetcode.com/problems/permutation-in-string/)|[Python3](./solutions/567.%20Permutation%20in%20String.py)|109 ms|
+|704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[Python3](./solutions/704.%20Binary%20Search.py)|434 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[Python3](./solutions/739.%20Daily%20Temperatures.py)|2063 ms|
 |853|[ Car Fleet](https://leetcode.com/problems/car-fleet/)|[Python3](./solutions/853.%20Car%20Fleet.py)|1016 ms|
 |1041|[ Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/)|[Python3](./solutions/1041.%20Robot%20Bounded%20In%20Circle.py)|28 ms|
