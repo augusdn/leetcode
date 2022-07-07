@@ -31,4 +31,5 @@
 |704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[Python3](./solutions/704.%20Binary%20Search.py)|434 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[Python3](./solutions/739.%20Daily%20Temperatures.py)|2063 ms|
 |853|[ Car Fleet](https://leetcode.com/problems/car-fleet/)|[Python3](./solutions/853.%20Car%20Fleet.py)|1016 ms|
+|875|[ Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)|[Python3](./solutions/875.%20Koko%20Eating%20Bananas.py)|763 ms|
 |1041|[ Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/)|[Python3](./solutions/1041.%20Robot%20Bounded%20In%20Circle.py)|28 ms|
