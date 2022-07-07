@@ -12,6 +12,7 @@
 |36|[ Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Python3](./solutions/36.%20Valid%20Sudoku.py)|177 ms|
 |42|[ Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Python3](./solutions/42.%20Trapping%20Rain%20Water.py)|136 ms|
 |49|[ Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Python3](./solutions/49.%20Group%20Anagrams.py)|184 ms|
+|74|[ Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|[Python3](./solutions/74.%20Search%20a%202D%20Matrix.py)|46 ms|
 |76|[ Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Python3](./solutions/76.%20Minimum%20Window%20Substring.py)|93 ms|
 |84|[ Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)|[Python3](./solutions/84.%20Largest%20Rectangle%20in%20Histogram.py)|1363 ms|
 |121|[ Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Python3](./solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.py)|1714 ms|
