@@ -37,3 +37,4 @@
 |875|[ Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)|[Python3](./solutions/875.%20Koko%20Eating%20Bananas.py)|763 ms|
 |981|[ Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)|[Python3](./solutions/981.%20Time%20Based%20Key-Value%20Store.py)|1106 ms|
 |1041|[ Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/)|[Python3](./solutions/1041.%20Robot%20Bounded%20In%20Circle.py)|28 ms|
+|1742|[ Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|[Python3](./solutions/1742.%20Maximum%20Number%20of%20Balls%20in%20a%20Box.py)|1611 ms|
